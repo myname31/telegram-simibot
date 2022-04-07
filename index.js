@@ -1,5 +1,5 @@
 const { Telegraf } = require('telegraf')
-const Token = "5214087229:AAH85KXfrn_ok3XZUPgphXLqRFrUPCevsnQ"
+const Token = "Your Token"
 const bot = new Telegraf(Token, {polling: true})
 const axios = require('axios')
 const lang = "id"
@@ -23,7 +23,7 @@ return err
 
 bot.on('text', async (ctx) => {
 //if (bot.simi === false) return 
-if (ctx.update.message.chat.type === 'supergroup') return
+if (ctx.update.message.chat.type === 'supergroup') return //Only Private Chats!
 let sim = await fetchJson("https://api.simsimi.net/v2/?text="+ctx.update.message.text+"&lc="+lang)
 ctx.telegram.sendMessage(ctx.message.chat.id, sim.success, {reply_to_message_id: ctx.message.message_id})
 })
