@@ -11,3 +11,7 @@ const Token = "Your Bot Token"
 ## Create Bot 
 [@BotFather](https://t.me/BotFather)
 
+## Installation (Termux)
+* pkg install nodejs -y
+* npm install
+* npm start
