@@ -1,5 +1,5 @@
 const { Telegraf } = require('telegraf')
-const Token = "Your Token"
+const Token = "Your Bot Token"
 const bot = new Telegraf(Token, {polling: true})
 const axios = require('axios')
 const lang = "id"
