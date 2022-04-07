@@ -1,5 +1,5 @@
 # telegram-simibot
-Telegram Simi Bot
+Telegram Simi Bot With Nodejs
 
 ## List Lang
 vn, en, ph, zh, ch, ru, id, ko, ar, fr, ja, es, de, pt
